@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC66DD322CE29223006D758A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD312CE29223006D758A /* AppDelegate.swift */; };
+		CC66DD342CE29223006D758A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD332CE29223006D758A /* SceneDelegate.swift */; };
+		CC66DD362CE29223006D758A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD352CE29223006D758A /* ViewController.swift */; };
+		CC66DD3B2CE29225006D758A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC66DD3A2CE29225006D758A /* Assets.xcassets */; };
+		CC66DD492CE29320006D758A /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = CC66DD482CE29320006D758A /* Swinject */; };
+		CC66DD4E2CE29328006D758A /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = CC66DD4D2CE29328006D758A /* SwinjectAutoregistration */; };
+		CC66DD532CE29331006D758A /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = CC66DD522CE29331006D758A /* SQLite */; };
+		CC66DD562CE2933D006D758A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC66DD552CE2933D006D758A /* SnapKit */; };
+		CC66DD5B2CE29381006D758A /* DreamHomeModel in Frameworks */ = {isa = PBXBuildFile; productRef = CC66DD5A2CE29381006D758A /* DreamHomeModel */; };
+		CC66DD5D2CE29381006D758A /* DreamHomeViewModel in Frameworks */ = {isa = PBXBuildFile; productRef = CC66DD5C2CE29381006D758A /* DreamHomeViewModel */; };
+		CC66DD652CE293C8006D758A /* Setupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD642CE293C8006D758A /* Setupable.swift */; };
+		CC66DD672CE293CF006D758A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD662CE293CF006D758A /* BaseViewController.swift */; };
+		CC66DD692CE293D5006D758A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD682CE293D5006D758A /* ReusableView.swift */; };
+		CC66DD6B2CE293DA006D758A /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD6A2CE293DA006D758A /* BaseRouter.swift */; };
+		CC66DD6E2CE293EA006D758A /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD6D2CE293EA006D758A /* ServiceAssembly.swift */; };
+		CC66DD702CE293F5006D758A /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD6F2CE293F5006D758A /* ViewControllerFactory.swift */; };
+		CC66DD732CE29408006D758A /* UntilOnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD722CE29408006D758A /* UntilOnboardingRouter.swift */; };
+		CC66DD752CE29412006D758A /* UntilOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD742CE29412006D758A /* UntilOnboardingViewController.swift */; };
+		CC66DD772CE2941A006D758A /* UntilOnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD762CE2941A006D758A /* UntilOnboardingAssembly.swift */; };
+		CC66DD7A2CE29436006D758A /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD792CE29436006D758A /* TableView.swift */; };
+		CC66DD7C2CE2943D006D758A /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD7B2CE2943D006D758A /* CollectionView.swift */; };
+		CC66DD7E2CE29443006D758A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD7D2CE29443006D758A /* UIColor.swift */; };
+		CC66DD802CE29448006D758A /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD7F2CE29448006D758A /* UIDevice.swift */; };
+		CC66DD822CE2944F006D758A /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD812CE2944F006D758A /* UILabel.swift */; };
+		CC66DD842CE29456006D758A /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD832CE29456006D758A /* StackView.swift */; };
+		CC66DD862CE2945B006D758A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD852CE2945B006D758A /* String.swift */; };
+		CCD5A6E52CE2985A00879B77 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E42CE2985A00879B77 /* OnboardingViewController.swift */; };
+		CCD5A6E72CE2986100879B77 /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E62CE2986100879B77 /* OnboardingAssembly.swift */; };
+		CCD5A6E92CE2986700879B77 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E82CE2986700879B77 /* OnboardingRouter.swift */; };
+		CCD5A6EC2CE2987F00879B77 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6EB2CE2987F00879B77 /* OnboardingCell.swift */; };
+		CCD5A6F22CE29B4300879B77 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCD5A6ED2CE29B4300879B77 /* SF-Pro-Text-Semibold.otf */; };
+		CCD5A6F32CE29B4300879B77 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCD5A6EE2CE29B4300879B77 /* SF-Pro-Text-Medium.otf */; };
+		CCD5A6F42CE29B4300879B77 /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCD5A6EF2CE29B4300879B77 /* SF-Pro-Text-Black.otf */; };
+		CCD5A6F52CE29B4300879B77 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCD5A6F02CE29B4300879B77 /* SF-Pro-Text-Regular.otf */; };
+		CCD5A6F62CE29B4300879B77 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCD5A6F12CE29B4300879B77 /* SF-Pro-Text-Bold.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC66DD2E2CE29223006D758A /* DreamHome Designer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DreamHome Designer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC66DD312CE29223006D758A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC66DD332CE29223006D758A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC66DD352CE29223006D758A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC66DD3A2CE29225006D758A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC66DD3F2CE29225006D758A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC66DD452CE292B1006D758A /* DreamHomeViewModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DreamHomeViewModel; sourceTree = "<group>"; };
+		CC66DD462CE292C2006D758A /* DreamHomeModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DreamHomeModel; sourceTree = "<group>"; };
+		CC66DD642CE293C8006D758A /* Setupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setupable.swift; sourceTree = "<group>"; };
+		CC66DD662CE293CF006D758A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CC66DD682CE293D5006D758A /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		CC66DD6A2CE293DA006D758A /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		CC66DD6D2CE293EA006D758A /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		CC66DD6F2CE293F5006D758A /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		CC66DD722CE29408006D758A /* UntilOnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntilOnboardingRouter.swift; sourceTree = "<group>"; };
+		CC66DD742CE29412006D758A /* UntilOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntilOnboardingViewController.swift; sourceTree = "<group>"; };
+		CC66DD762CE2941A006D758A /* UntilOnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntilOnboardingAssembly.swift; sourceTree = "<group>"; };
+		CC66DD792CE29436006D758A /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		CC66DD7B2CE2943D006D758A /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		CC66DD7D2CE29443006D758A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CC66DD7F2CE29448006D758A /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		CC66DD812CE2944F006D758A /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		CC66DD832CE29456006D758A /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		CC66DD852CE2945B006D758A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CCD5A6E42CE2985A00879B77 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CCD5A6E62CE2986100879B77 /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		CCD5A6E82CE2986700879B77 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		CCD5A6EB2CE2987F00879B77 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		CCD5A6ED2CE29B4300879B77 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		CCD5A6EE2CE29B4300879B77 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		CCD5A6EF2CE29B4300879B77 /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		CCD5A6F02CE29B4300879B77 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		CCD5A6F12CE29B4300879B77 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC66DD2B2CE29223006D758A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC66DD532CE29331006D758A /* SQLite in Frameworks */,
+				CC66DD5B2CE29381006D758A /* DreamHomeModel in Frameworks */,
+				CC66DD5D2CE29381006D758A /* DreamHomeViewModel in Frameworks */,
+				CC66DD492CE29320006D758A /* Swinject in Frameworks */,
+				CC66DD562CE2933D006D758A /* SnapKit in Frameworks */,
+				CC66DD4E2CE29328006D758A /* SwinjectAutoregistration in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC66DD252CE29223006D758A = {
+			isa = PBXGroup;
+			children = (
+				CC66DD462CE292C2006D758A /* DreamHomeModel */,
+				CC66DD452CE292B1006D758A /* DreamHomeViewModel */,
+				CC66DD302CE29223006D758A /* DreamHome Designer */,
+				CC66DD2F2CE29223006D758A /* Products */,
+				CC66DD592CE29381006D758A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC66DD2F2CE29223006D758A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD2E2CE29223006D758A /* DreamHome Designer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC66DD302CE29223006D758A /* DreamHome Designer */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD632CE293B3006D758A /* Components */,
+				CC66DD622CE293A6006D758A /* Extensions */,
+				CC66DD612CE2939F006D758A /* Appearance */,
+				CC66DD602CE2939A006D758A /* View */,
+				CC66DD5F2CE2938E006D758A /* Common */,
+				CC66DD5E2CE29388006D758A /* Base */,
+				CC66DD312CE29223006D758A /* AppDelegate.swift */,
+				CC66DD332CE29223006D758A /* SceneDelegate.swift */,
+				CC66DD352CE29223006D758A /* ViewController.swift */,
+				CC66DD3F2CE29225006D758A /* Info.plist */,
+			);
+			path = "DreamHome Designer";
+			sourceTree = "<group>";
+		};
+		CC66DD592CE29381006D758A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC66DD5E2CE29388006D758A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD642CE293C8006D758A /* Setupable.swift */,
+				CC66DD662CE293CF006D758A /* BaseViewController.swift */,
+				CC66DD682CE293D5006D758A /* ReusableView.swift */,
+				CC66DD6A2CE293DA006D758A /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CC66DD5F2CE2938E006D758A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD6C2CE293DF006D758A /* Assembly */,
+				CC66DD6F2CE293F5006D758A /* ViewControllerFactory.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CC66DD602CE2939A006D758A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD872CE2950A006D758A /* Onboarding */,
+				CC66DD712CE293FA006D758A /* UntilOnboarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC66DD612CE2939F006D758A /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD3A2CE29225006D758A /* Assets.xcassets */,
+				CC66DD782CE29422006D758A /* Fonts */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		CC66DD622CE293A6006D758A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD792CE29436006D758A /* TableView.swift */,
+				CC66DD7B2CE2943D006D758A /* CollectionView.swift */,
+				CC66DD7D2CE29443006D758A /* UIColor.swift */,
+				CC66DD7F2CE29448006D758A /* UIDevice.swift */,
+				CC66DD812CE2944F006D758A /* UILabel.swift */,
+				CC66DD832CE29456006D758A /* StackView.swift */,
+				CC66DD852CE2945B006D758A /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC66DD632CE293B3006D758A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC66DD6C2CE293DF006D758A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD6D2CE293EA006D758A /* ServiceAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CC66DD712CE293FA006D758A /* UntilOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CC66DD722CE29408006D758A /* UntilOnboardingRouter.swift */,
+				CC66DD742CE29412006D758A /* UntilOnboardingViewController.swift */,
+				CC66DD762CE2941A006D758A /* UntilOnboardingAssembly.swift */,
+			);
+			path = UntilOnboarding;
+			sourceTree = "<group>";
+		};
+		CC66DD782CE29422006D758A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CCD5A6EF2CE29B4300879B77 /* SF-Pro-Text-Black.otf */,
+				CCD5A6F12CE29B4300879B77 /* SF-Pro-Text-Bold.otf */,
+				CCD5A6EE2CE29B4300879B77 /* SF-Pro-Text-Medium.otf */,
+				CCD5A6F02CE29B4300879B77 /* SF-Pro-Text-Regular.otf */,
+				CCD5A6ED2CE29B4300879B77 /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CC66DD872CE2950A006D758A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CCD5A6EA2CE2987600879B77 /* Cell */,
+				CCD5A6E42CE2985A00879B77 /* OnboardingViewController.swift */,
+				CCD5A6E62CE2986100879B77 /* OnboardingAssembly.swift */,
+				CCD5A6E82CE2986700879B77 /* OnboardingRouter.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CCD5A6EA2CE2987600879B77 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CCD5A6EB2CE2987F00879B77 /* OnboardingCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC66DD2D2CE29223006D758A /* DreamHome Designer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC66DD422CE29225006D758A /* Build configuration list for PBXNativeTarget "DreamHome Designer" */;
+			buildPhases = (
+				CC66DD2A2CE29223006D758A /* Sources */,
+				CC66DD2B2CE29223006D758A /* Frameworks */,
+				CC66DD2C2CE29223006D758A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DreamHome Designer";
+			packageProductDependencies = (
+				CC66DD482CE29320006D758A /* Swinject */,
+				CC66DD4D2CE29328006D758A /* SwinjectAutoregistration */,
+				CC66DD522CE29331006D758A /* SQLite */,
+				CC66DD552CE2933D006D758A /* SnapKit */,
+				CC66DD5A2CE29381006D758A /* DreamHomeModel */,
+				CC66DD5C2CE29381006D758A /* DreamHomeViewModel */,
+			);
+			productName = "DreamHome Designer";
+			productReference = CC66DD2E2CE29223006D758A /* DreamHome Designer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC66DD262CE29223006D758A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CC66DD2D2CE29223006D758A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CC66DD292CE29223006D758A /* Build configuration list for PBXProject "DreamHome Designer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC66DD252CE29223006D758A;
+			packageReferences = (
+				CC66DD472CE29320006D758A /* XCRemoteSwiftPackageReference "Swinject" */,
+				CC66DD4C2CE29328006D758A /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				CC66DD512CE29331006D758A /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				CC66DD542CE2933D006D758A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = CC66DD2F2CE29223006D758A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC66DD2D2CE29223006D758A /* DreamHome Designer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC66DD2C2CE29223006D758A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD5A6F22CE29B4300879B77 /* SF-Pro-Text-Semibold.otf in Resources */,
+				CCD5A6F52CE29B4300879B77 /* SF-Pro-Text-Regular.otf in Resources */,
+				CCD5A6F62CE29B4300879B77 /* SF-Pro-Text-Bold.otf in Resources */,
+				CC66DD3B2CE29225006D758A /* Assets.xcassets in Resources */,
+				CCD5A6F32CE29B4300879B77 /* SF-Pro-Text-Medium.otf in Resources */,
+				CCD5A6F42CE29B4300879B77 /* SF-Pro-Text-Black.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC66DD2A2CE29223006D758A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD5A6E72CE2986100879B77 /* OnboardingAssembly.swift in Sources */,
+				CC66DD862CE2945B006D758A /* String.swift in Sources */,
+				CC66DD822CE2944F006D758A /* UILabel.swift in Sources */,
+				CC66DD732CE29408006D758A /* UntilOnboardingRouter.swift in Sources */,
+				CC66DD672CE293CF006D758A /* BaseViewController.swift in Sources */,
+				CC66DD7C2CE2943D006D758A /* CollectionView.swift in Sources */,
+				CC66DD752CE29412006D758A /* UntilOnboardingViewController.swift in Sources */,
+				CC66DD842CE29456006D758A /* StackView.swift in Sources */,
+				CCD5A6E52CE2985A00879B77 /* OnboardingViewController.swift in Sources */,
+				CCD5A6EC2CE2987F00879B77 /* OnboardingCell.swift in Sources */,
+				CCD5A6E92CE2986700879B77 /* OnboardingRouter.swift in Sources */,
+				CC66DD7E2CE29443006D758A /* UIColor.swift in Sources */,
+				CC66DD6E2CE293EA006D758A /* ServiceAssembly.swift in Sources */,
+				CC66DD362CE29223006D758A /* ViewController.swift in Sources */,
+				CC66DD802CE29448006D758A /* UIDevice.swift in Sources */,
+				CC66DD702CE293F5006D758A /* ViewControllerFactory.swift in Sources */,
+				CC66DD6B2CE293DA006D758A /* BaseRouter.swift in Sources */,
+				CC66DD772CE2941A006D758A /* UntilOnboardingAssembly.swift in Sources */,
+				CC66DD7A2CE29436006D758A /* TableView.swift in Sources */,
+				CC66DD322CE29223006D758A /* AppDelegate.swift in Sources */,
+				CC66DD692CE293D5006D758A /* ReusableView.swift in Sources */,
+				CC66DD342CE29223006D758A /* SceneDelegate.swift in Sources */,
+				CC66DD652CE293C8006D758A /* Setupable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC66DD402CE29225006D758A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC66DD412CE29225006D758A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC66DD432CE29225006D758A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PTH9U4CB9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DreamHome Designer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.er.DreamHome-Designer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CC66DD442CE29225006D758A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PTH9U4CB9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DreamHome Designer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.er.DreamHome-Designer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC66DD292CE29223006D758A /* Build configuration list for PBXProject "DreamHome Designer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC66DD402CE29225006D758A /* Debug */,
+				CC66DD412CE29225006D758A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC66DD422CE29225006D758A /* Build configuration list for PBXNativeTarget "DreamHome Designer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC66DD432CE29225006D758A /* Debug */,
+				CC66DD442CE29225006D758A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC66DD472CE29320006D758A /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		CC66DD4C2CE29328006D758A /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		CC66DD512CE29331006D758A /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		CC66DD542CE2933D006D758A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC66DD482CE29320006D758A /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC66DD472CE29320006D758A /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		CC66DD4D2CE29328006D758A /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC66DD4C2CE29328006D758A /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		CC66DD522CE29331006D758A /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC66DD512CE29331006D758A /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		CC66DD552CE2933D006D758A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC66DD542CE2933D006D758A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CC66DD5A2CE29381006D758A /* DreamHomeModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DreamHomeModel;
+		};
+		CC66DD5C2CE29381006D758A /* DreamHomeViewModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DreamHomeViewModel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CC66DD262CE29223006D758A /* Project object */;
+}
