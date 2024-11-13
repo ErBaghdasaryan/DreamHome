@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC41A2222CE39CD700F8C6A2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41A2212CE39CD700F8C6A2 /* TabBar.swift */; };
+		CC41A2272CE4E42B00F8C6A2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41A2262CE4E42B00F8C6A2 /* SettingsView.swift */; };
+		CC41A22A2CE4F37D00F8C6A2 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41A2292CE4F37D00F8C6A2 /* SliderView.swift */; };
+		CC41A22D2CE4F84000F8C6A2 /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41A22C2CE4F84000F8C6A2 /* ToggleView.swift */; };
+		CC41A2302CE513C300F8C6A2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CC41A22F2CE513C300F8C6A2 /* Toast */; };
+		CC41A2382CE51E4800F8C6A2 /* AddCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41A2372CE51E4800F8C6A2 /* AddCollectionView.swift */; };
 		CC66DD322CE29223006D758A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD312CE29223006D758A /* AppDelegate.swift */; };
 		CC66DD342CE29223006D758A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD332CE29223006D758A /* SceneDelegate.swift */; };
 		CC66DD362CE29223006D758A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD352CE29223006D758A /* ViewController.swift */; };
@@ -33,6 +39,15 @@
 		CC66DD822CE2944F006D758A /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD812CE2944F006D758A /* UILabel.swift */; };
 		CC66DD842CE29456006D758A /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD832CE29456006D758A /* StackView.swift */; };
 		CC66DD862CE2945B006D758A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD852CE2945B006D758A /* String.swift */; };
+		CC6A1DD52CE3582C00823803 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DD42CE3582C00823803 /* SettingsViewController.swift */; };
+		CC6A1DD72CE3583300823803 /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DD62CE3583300823803 /* SettingsAssembly.swift */; };
+		CC6A1DD92CE3583900823803 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DD82CE3583900823803 /* SettingsRouter.swift */; };
+		CC6A1DDB2CE3584200823803 /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DDA2CE3584200823803 /* PasswordsViewController.swift */; };
+		CC6A1DDD2CE3584900823803 /* PasswordsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DDC2CE3584900823803 /* PasswordsRouter.swift */; };
+		CC6A1DDF2CE3585000823803 /* PasswordAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DDE2CE3585000823803 /* PasswordAssembly.swift */; };
+		CC6A1DE12CE3585800823803 /* GeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DE02CE3585800823803 /* GeneratorViewController.swift */; };
+		CC6A1DE32CE3585E00823803 /* GeneratorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DE22CE3585E00823803 /* GeneratorAssembly.swift */; };
+		CC6A1DE72CE3588500823803 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DE62CE3588500823803 /* TabBarViewController.swift */; };
 		CCD5A6E52CE2985A00879B77 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E42CE2985A00879B77 /* OnboardingViewController.swift */; };
 		CCD5A6E72CE2986100879B77 /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E62CE2986100879B77 /* OnboardingAssembly.swift */; };
 		CCD5A6E92CE2986700879B77 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E82CE2986700879B77 /* OnboardingRouter.swift */; };
@@ -45,6 +60,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC41A2212CE39CD700F8C6A2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CC41A2262CE4E42B00F8C6A2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CC41A2292CE4F37D00F8C6A2 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		CC41A22C2CE4F84000F8C6A2 /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		CC41A2372CE51E4800F8C6A2 /* AddCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionView.swift; sourceTree = "<group>"; };
 		CC66DD2E2CE29223006D758A /* DreamHome Designer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DreamHome Designer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC66DD312CE29223006D758A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC66DD332CE29223006D758A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +89,15 @@
 		CC66DD812CE2944F006D758A /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		CC66DD832CE29456006D758A /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		CC66DD852CE2945B006D758A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CC6A1DD42CE3582C00823803 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CC6A1DD62CE3583300823803 /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		CC6A1DD82CE3583900823803 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		CC6A1DDA2CE3584200823803 /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
+		CC6A1DDC2CE3584900823803 /* PasswordsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsRouter.swift; sourceTree = "<group>"; };
+		CC6A1DDE2CE3585000823803 /* PasswordAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAssembly.swift; sourceTree = "<group>"; };
+		CC6A1DE02CE3585800823803 /* GeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewController.swift; sourceTree = "<group>"; };
+		CC6A1DE22CE3585E00823803 /* GeneratorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorAssembly.swift; sourceTree = "<group>"; };
+		CC6A1DE62CE3588500823803 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CCD5A6E42CE2985A00879B77 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CCD5A6E62CE2986100879B77 /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
 		CCD5A6E82CE2986700879B77 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
@@ -90,6 +119,7 @@
 				CC66DD5D2CE29381006D758A /* DreamHomeViewModel in Frameworks */,
 				CC66DD492CE29320006D758A /* Swinject in Frameworks */,
 				CC66DD562CE2933D006D758A /* SnapKit in Frameworks */,
+				CC41A2302CE513C300F8C6A2 /* Toast in Frameworks */,
 				CC66DD4E2CE29328006D758A /* SwinjectAutoregistration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +127,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC41A2252CE4E41F00F8C6A2 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				CC41A2262CE4E42B00F8C6A2 /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		CC41A2282CE4F36B00F8C6A2 /* PasswordLenght */ = {
+			isa = PBXGroup;
+			children = (
+				CC41A2292CE4F37D00F8C6A2 /* SliderView.swift */,
+			);
+			path = PasswordLenght;
+			sourceTree = "<group>";
+		};
+		CC41A22B2CE4F80E00F8C6A2 /* ToggleView */ = {
+			isa = PBXGroup;
+			children = (
+				CC41A22C2CE4F84000F8C6A2 /* ToggleView.swift */,
+			);
+			path = ToggleView;
+			sourceTree = "<group>";
+		};
+		CC41A2362CE51E3D00F8C6A2 /* AddCollection */ = {
+			isa = PBXGroup;
+			children = (
+				CC41A2372CE51E4800F8C6A2 /* AddCollectionView.swift */,
+			);
+			path = AddCollection;
+			sourceTree = "<group>";
+		};
 		CC66DD252CE29223006D758A = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +225,10 @@
 		CC66DD602CE2939A006D758A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC6A1DD32CE3581F00823803 /* Settings */,
+				CC6A1DD22CE3581700823803 /* Passwords */,
+				CC6A1DD12CE3581000823803 /* Generator */,
+				CC6A1DD02CE3580200823803 /* TabBar */,
 				CC66DD872CE2950A006D758A /* Onboarding */,
 				CC66DD712CE293FA006D758A /* UntilOnboarding */,
 			);
@@ -188,6 +254,7 @@
 				CC66DD812CE2944F006D758A /* UILabel.swift */,
 				CC66DD832CE29456006D758A /* StackView.swift */,
 				CC66DD852CE2945B006D758A /* String.swift */,
+				CC41A2212CE39CD700F8C6A2 /* TabBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +262,10 @@
 		CC66DD632CE293B3006D758A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CC41A2362CE51E3D00F8C6A2 /* AddCollection */,
+				CC41A22B2CE4F80E00F8C6A2 /* ToggleView */,
+				CC41A2282CE4F36B00F8C6A2 /* PasswordLenght */,
+				CC41A2252CE4E41F00F8C6A2 /* SettingsView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -240,6 +311,43 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		CC6A1DD02CE3580200823803 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CC6A1DE62CE3588500823803 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CC6A1DD12CE3581000823803 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				CC6A1DE02CE3585800823803 /* GeneratorViewController.swift */,
+				CC6A1DE22CE3585E00823803 /* GeneratorAssembly.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		CC6A1DD22CE3581700823803 /* Passwords */ = {
+			isa = PBXGroup;
+			children = (
+				CC6A1DDA2CE3584200823803 /* PasswordsViewController.swift */,
+				CC6A1DDE2CE3585000823803 /* PasswordAssembly.swift */,
+				CC6A1DDC2CE3584900823803 /* PasswordsRouter.swift */,
+			);
+			path = Passwords;
+			sourceTree = "<group>";
+		};
+		CC6A1DD32CE3581F00823803 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CC6A1DD42CE3582C00823803 /* SettingsViewController.swift */,
+				CC6A1DD82CE3583900823803 /* SettingsRouter.swift */,
+				CC6A1DD62CE3583300823803 /* SettingsAssembly.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		CCD5A6EA2CE2987600879B77 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +379,7 @@
 				CC66DD552CE2933D006D758A /* SnapKit */,
 				CC66DD5A2CE29381006D758A /* DreamHomeModel */,
 				CC66DD5C2CE29381006D758A /* DreamHomeViewModel */,
+				CC41A22F2CE513C300F8C6A2 /* Toast */,
 			);
 			productName = "DreamHome Designer";
 			productReference = CC66DD2E2CE29223006D758A /* DreamHome Designer.app */;
@@ -305,6 +414,7 @@
 				CC66DD4C2CE29328006D758A /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
 				CC66DD512CE29331006D758A /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 				CC66DD542CE2933D006D758A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CC41A22E2CE513C300F8C6A2 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = CC66DD2F2CE29223006D758A /* Products */;
 			projectDirPath = "";
@@ -336,21 +446,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC41A2272CE4E42B00F8C6A2 /* SettingsView.swift in Sources */,
 				CCD5A6E72CE2986100879B77 /* OnboardingAssembly.swift in Sources */,
 				CC66DD862CE2945B006D758A /* String.swift in Sources */,
+				CC6A1DD72CE3583300823803 /* SettingsAssembly.swift in Sources */,
+				CC6A1DDD2CE3584900823803 /* PasswordsRouter.swift in Sources */,
 				CC66DD822CE2944F006D758A /* UILabel.swift in Sources */,
 				CC66DD732CE29408006D758A /* UntilOnboardingRouter.swift in Sources */,
+				CC6A1DDF2CE3585000823803 /* PasswordAssembly.swift in Sources */,
+				CC41A2222CE39CD700F8C6A2 /* TabBar.swift in Sources */,
 				CC66DD672CE293CF006D758A /* BaseViewController.swift in Sources */,
+				CC41A2382CE51E4800F8C6A2 /* AddCollectionView.swift in Sources */,
 				CC66DD7C2CE2943D006D758A /* CollectionView.swift in Sources */,
 				CC66DD752CE29412006D758A /* UntilOnboardingViewController.swift in Sources */,
 				CC66DD842CE29456006D758A /* StackView.swift in Sources */,
 				CCD5A6E52CE2985A00879B77 /* OnboardingViewController.swift in Sources */,
 				CCD5A6EC2CE2987F00879B77 /* OnboardingCell.swift in Sources */,
+				CC6A1DE72CE3588500823803 /* TabBarViewController.swift in Sources */,
+				CC6A1DE32CE3585E00823803 /* GeneratorAssembly.swift in Sources */,
 				CCD5A6E92CE2986700879B77 /* OnboardingRouter.swift in Sources */,
+				CC41A22D2CE4F84000F8C6A2 /* ToggleView.swift in Sources */,
 				CC66DD7E2CE29443006D758A /* UIColor.swift in Sources */,
 				CC66DD6E2CE293EA006D758A /* ServiceAssembly.swift in Sources */,
+				CC6A1DE12CE3585800823803 /* GeneratorViewController.swift in Sources */,
+				CC41A22A2CE4F37D00F8C6A2 /* SliderView.swift in Sources */,
 				CC66DD362CE29223006D758A /* ViewController.swift in Sources */,
 				CC66DD802CE29448006D758A /* UIDevice.swift in Sources */,
+				CC6A1DDB2CE3584200823803 /* PasswordsViewController.swift in Sources */,
 				CC66DD702CE293F5006D758A /* ViewControllerFactory.swift in Sources */,
 				CC66DD6B2CE293DA006D758A /* BaseRouter.swift in Sources */,
 				CC66DD772CE2941A006D758A /* UntilOnboardingAssembly.swift in Sources */,
@@ -358,7 +480,9 @@
 				CC66DD322CE29223006D758A /* AppDelegate.swift in Sources */,
 				CC66DD692CE293D5006D758A /* ReusableView.swift in Sources */,
 				CC66DD342CE29223006D758A /* SceneDelegate.swift in Sources */,
+				CC6A1DD92CE3583900823803 /* SettingsRouter.swift in Sources */,
 				CC66DD652CE293C8006D758A /* Setupable.swift in Sources */,
+				CC6A1DD52CE3582C00823803 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +696,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CC41A22E2CE513C300F8C6A2 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		CC66DD472CE29320006D758A /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
@@ -607,6 +739,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CC41A22F2CE513C300F8C6A2 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC41A22E2CE513C300F8C6A2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
 		CC66DD482CE29320006D758A /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CC66DD472CE29320006D758A /* XCRemoteSwiftPackageReference "Swinject" */;
