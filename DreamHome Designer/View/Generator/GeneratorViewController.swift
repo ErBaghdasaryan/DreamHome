@@ -201,7 +201,7 @@ extension GeneratorViewController {
     @objc func addPasswords() {
         guard let navigationController = self.navigationController else { return }
         guard let lenght = self.passwordLength.lengthLabel.text else { return }
-        guard let count = self.passwordLength.lengthLabel.text else { return }
+        guard let count = self.numberOfPassword.lengthLabel.text else { return }
 
         let passwords = generatePasswords(length: Int(lenght) ?? 0,
                                           count: Int(count) ?? 0,
@@ -233,7 +233,31 @@ extension GeneratorViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             navigationController.navigationBar.isHidden = true
             self.tabBarController?.tabBar.isHidden = true
-            _ = AddCollectionView.show(in: self)
+            _ = AddCollectionView.createAndShow(in: self,
+                                                delegate: { [weak self] name in
+                guard let self = self else { return }
+                self.viewModel?.addCollection(model: .init(name: name,
+                                                           passwords: passwords))
+                UIView.animate(withDuration: 0, animations: {
+                    visualEffectView.alpha = 0
+                    dimmingView.alpha = 0
+                }) { _ in
+                    visualEffectView.removeFromSuperview()
+                    dimmingView.removeFromSuperview()
+                    navigationController.navigationBar.isHidden = false
+                    self.tabBarController?.tabBar.isHidden = false
+                }
+            }, cancelDelegate: {
+                UIView.animate(withDuration: 0, animations: {
+                    visualEffectView.alpha = 0
+                    dimmingView.alpha = 0
+                }) { _ in
+                    visualEffectView.removeFromSuperview()
+                    dimmingView.removeFromSuperview()
+                    navigationController.navigationBar.isHidden = false
+                    self.tabBarController?.tabBar.isHidden = false
+                }
+            })
         }
     }
 

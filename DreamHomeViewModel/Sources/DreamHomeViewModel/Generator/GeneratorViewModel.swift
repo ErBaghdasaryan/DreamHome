@@ -9,6 +9,7 @@ import Foundation
 import DreamHomeModel
 
 public protocol IGeneratorViewModel {
+    func addCollection(model: PasswordModel)
 }
 
 public class GeneratorViewModel: IGeneratorViewModel {
@@ -17,5 +18,13 @@ public class GeneratorViewModel: IGeneratorViewModel {
 
     public init(passwordsService: IPasswordsService) {
         self.passwordsService = passwordsService
+    }
+
+    public func addCollection(model: PasswordModel) {
+        do {
+            _ = try self.passwordsService.addCollection(model)
+        } catch {
+            print(error)
+        }
     }
 }
