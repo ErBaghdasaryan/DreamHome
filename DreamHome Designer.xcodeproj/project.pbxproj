@@ -14,9 +14,14 @@
 		CC41A2302CE513C300F8C6A2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CC41A22F2CE513C300F8C6A2 /* Toast */; };
 		CC41A2382CE51E4800F8C6A2 /* AddCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41A2372CE51E4800F8C6A2 /* AddCollectionView.swift */; };
 		CC5A8A822CE64944007D0D02 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A812CE64944007D0D02 /* EmptyTableViewCell.swift */; };
-		CC5A8A842CE64B88007D0D02 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A832CE64B88007D0D02 /* PasswordTableViewCell.swift */; };
+		CC5A8A842CE64B88007D0D02 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A832CE64B88007D0D02 /* CollectionTableViewCell.swift */; };
 		CC5A8A872CE69589007D0D02 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A862CE69589007D0D02 /* CustomTextField.swift */; };
 		CC5A8A8A2CE695CE007D0D02 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A892CE695CE007D0D02 /* InputField.swift */; };
+		CC5A8A8D2CE76974007D0D02 /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A8C2CE76974007D0D02 /* EditPasswordViewController.swift */; };
+		CC5A8A8F2CE7697C007D0D02 /* EditPasswordAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A8E2CE7697C007D0D02 /* EditPasswordAssembly.swift */; };
+		CC5A8A922CE76FD6007D0D02 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A912CE76FD6007D0D02 /* PasswordTableViewCell.swift */; };
+		CC5A8A952CE7764F007D0D02 /* AddPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A942CE7764F007D0D02 /* AddPasswordView.swift */; };
+		CC5A8A972CE77CE1007D0D02 /* EditPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8A962CE77CE1007D0D02 /* EditPasswordView.swift */; };
 		CC66DD322CE29223006D758A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD312CE29223006D758A /* AppDelegate.swift */; };
 		CC66DD342CE29223006D758A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD332CE29223006D758A /* SceneDelegate.swift */; };
 		CC66DD362CE29223006D758A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DD352CE29223006D758A /* ViewController.swift */; };
@@ -70,9 +75,14 @@
 		CC41A22C2CE4F84000F8C6A2 /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		CC41A2372CE51E4800F8C6A2 /* AddCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionView.swift; sourceTree = "<group>"; };
 		CC5A8A812CE64944007D0D02 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
-		CC5A8A832CE64B88007D0D02 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		CC5A8A832CE64B88007D0D02 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		CC5A8A862CE69589007D0D02 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CC5A8A892CE695CE007D0D02 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		CC5A8A8C2CE76974007D0D02 /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
+		CC5A8A8E2CE7697C007D0D02 /* EditPasswordAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordAssembly.swift; sourceTree = "<group>"; };
+		CC5A8A912CE76FD6007D0D02 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		CC5A8A942CE7764F007D0D02 /* AddPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordView.swift; sourceTree = "<group>"; };
+		CC5A8A962CE77CE1007D0D02 /* EditPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordView.swift; sourceTree = "<group>"; };
 		CC66DD2E2CE29223006D758A /* DreamHome Designer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DreamHome Designer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC66DD312CE29223006D758A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC66DD332CE29223006D758A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5A8A812CE64944007D0D02 /* EmptyTableViewCell.swift */,
-				CC5A8A832CE64B88007D0D02 /* PasswordTableViewCell.swift */,
+				CC5A8A832CE64B88007D0D02 /* CollectionTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -190,6 +200,33 @@
 				CC5A8A892CE695CE007D0D02 /* InputField.swift */,
 			);
 			path = InputField;
+			sourceTree = "<group>";
+		};
+		CC5A8A8B2CE76960007D0D02 /* EditPassword */ = {
+			isa = PBXGroup;
+			children = (
+				CC5A8A902CE76FC7007D0D02 /* Cell */,
+				CC5A8A8C2CE76974007D0D02 /* EditPasswordViewController.swift */,
+				CC5A8A8E2CE7697C007D0D02 /* EditPasswordAssembly.swift */,
+			);
+			path = EditPassword;
+			sourceTree = "<group>";
+		};
+		CC5A8A902CE76FC7007D0D02 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC5A8A912CE76FD6007D0D02 /* PasswordTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CC5A8A932CE77440007D0D02 /* PasswordViews */ = {
+			isa = PBXGroup;
+			children = (
+				CC5A8A942CE7764F007D0D02 /* AddPasswordView.swift */,
+				CC5A8A962CE77CE1007D0D02 /* EditPasswordView.swift */,
+			);
+			path = PasswordViews;
 			sourceTree = "<group>";
 		};
 		CC66DD252CE29223006D758A = {
@@ -295,6 +332,7 @@
 		CC66DD632CE293B3006D758A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CC5A8A932CE77440007D0D02 /* PasswordViews */,
 				CC5A8A882CE695BE007D0D02 /* InputField */,
 				CC5A8A852CE6957B007D0D02 /* CustomTextField */,
 				CC41A2362CE51E3D00F8C6A2 /* AddCollection */,
@@ -366,6 +404,7 @@
 		CC6A1DD22CE3581700823803 /* Passwords */ = {
 			isa = PBXGroup;
 			children = (
+				CC5A8A8B2CE76960007D0D02 /* EditPassword */,
 				CC5A8A802CE64937007D0D02 /* Cell */,
 				CC6A1DDA2CE3584200823803 /* PasswordsViewController.swift */,
 				CC6A1DDE2CE3585000823803 /* PasswordAssembly.swift */,
@@ -502,15 +541,19 @@
 				CC6A1DE72CE3588500823803 /* TabBarViewController.swift in Sources */,
 				CC6A1DE32CE3585E00823803 /* GeneratorAssembly.swift in Sources */,
 				CCD5A6E92CE2986700879B77 /* OnboardingRouter.swift in Sources */,
+				CC5A8A952CE7764F007D0D02 /* AddPasswordView.swift in Sources */,
 				CC41A22D2CE4F84000F8C6A2 /* ToggleView.swift in Sources */,
 				CC66DD7E2CE29443006D758A /* UIColor.swift in Sources */,
+				CC5A8A922CE76FD6007D0D02 /* PasswordTableViewCell.swift in Sources */,
 				CC66DD6E2CE293EA006D758A /* ServiceAssembly.swift in Sources */,
 				CC6A1DE12CE3585800823803 /* GeneratorViewController.swift in Sources */,
+				CC5A8A8F2CE7697C007D0D02 /* EditPasswordAssembly.swift in Sources */,
 				CC41A22A2CE4F37D00F8C6A2 /* SliderView.swift in Sources */,
 				CC66DD362CE29223006D758A /* ViewController.swift in Sources */,
 				CC66DD802CE29448006D758A /* UIDevice.swift in Sources */,
 				CC6A1DDB2CE3584200823803 /* PasswordsViewController.swift in Sources */,
-				CC5A8A842CE64B88007D0D02 /* PasswordTableViewCell.swift in Sources */,
+				CC5A8A8D2CE76974007D0D02 /* EditPasswordViewController.swift in Sources */,
+				CC5A8A842CE64B88007D0D02 /* CollectionTableViewCell.swift in Sources */,
 				CC66DD702CE293F5006D758A /* ViewControllerFactory.swift in Sources */,
 				CC66DD6B2CE293DA006D758A /* BaseRouter.swift in Sources */,
 				CC66DD772CE2941A006D758A /* UntilOnboardingAssembly.swift in Sources */,
@@ -523,6 +566,7 @@
 				CC5A8A822CE64944007D0D02 /* EmptyTableViewCell.swift in Sources */,
 				CC66DD652CE293C8006D758A /* Setupable.swift in Sources */,
 				CC6A1DD52CE3582C00823803 /* SettingsViewController.swift in Sources */,
+				CC5A8A972CE77CE1007D0D02 /* EditPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,9 +699,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5PTH9U4CB9;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DreamHome Designer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DreamHome Designer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -668,7 +713,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.er.DreamHome-Designer";
+				PRODUCT_BUNDLE_IDENTIFIER = "bundle-id";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -687,9 +732,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5PTH9U4CB9;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DreamHome Designer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DreamHome Designer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -700,7 +746,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.er.DreamHome-Designer";
+				PRODUCT_BUNDLE_IDENTIFIER = "bundle-id";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

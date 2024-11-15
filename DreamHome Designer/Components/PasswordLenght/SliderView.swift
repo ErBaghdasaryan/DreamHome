@@ -17,7 +17,7 @@ class SliderView: UIView {
                                       textColor: .white,
                                       font: UIFont(name: "SFProText-Semibold", size: 17))
 
-    private let slider = UISlider()
+    public let slider = UISlider()
 
     private let minLabel = UILabel(text: "",
                                    textColor: .white,

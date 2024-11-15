@@ -203,8 +203,8 @@ extension GeneratorViewController {
         guard let lenght = self.passwordLength.lengthLabel.text else { return }
         guard let count = self.numberOfPassword.lengthLabel.text else { return }
 
-        let passwords = generatePasswords(length: Int(lenght) ?? 0,
-                                          count: Int(count) ?? 0,
+        let passwords = generatePasswords(length: Int(lenght) ?? 4,
+                                          count: Int(count) ?? 1,
                                           includeDigits: self.numbers.isOn,
                                           includeUppercase: self.uppercase.isOn,
                                           includeLowercase: self.lowercase.isOn,

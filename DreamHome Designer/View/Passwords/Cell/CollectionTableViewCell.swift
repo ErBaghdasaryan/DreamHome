@@ -8,8 +8,9 @@
 import UIKit
 import SnapKit
 import DreamHomeModel
+import Combine
 
-class PasswordTableViewCell: UITableViewCell, IReusableView {
+class CollectionTableViewCell: UITableViewCell, IReusableView {
     private let content = UIView()
 
     private let password = UILabel(text: "",
@@ -24,12 +25,21 @@ class PasswordTableViewCell: UITableViewCell, IReusableView {
     private var buttonsStack: UIStackView!
     private let botttomView = UIView()
 
+    public var editSubject = PassthroughSubject<Bool, Never>()
+    public var deleteSubject = PassthroughSubject<Bool, Never>()
+    var cancellables = Set<AnyCancellable>()
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        cancellables.removeAll()
+    }
+
     private func setupUI() {
         self.backgroundColor = .clear
         self.selectionStyle = .none
         self.content.backgroundColor = UIColor(hex: "#00242C")
 
-        self.botttomView.backgroundColor = .white.withAlphaComponent(0.5)
+        self.botttomView.backgroundColor = .white.withAlphaComponent(0.05)
 
         self.editButton.setImage(.init(named: "editPassword"), for: .normal)
         self.deleteButton.setImage(.init(named: "deletePassword"), for: .normal)
@@ -47,6 +57,7 @@ class PasswordTableViewCell: UITableViewCell, IReusableView {
         content.addSubview(botttomView)
         content.addSubview(buttonsStack)
         setupConstraints()
+        makeButtonActions()
     }
 
     private func setupConstraints() {
@@ -92,5 +103,21 @@ class PasswordTableViewCell: UITableViewCell, IReusableView {
         self.passwordCount.text = "\(model.passwords.count) passwords"
 
         self.setupUI()
+    }
+}
+
+//MARK: Button actions
+extension CollectionTableViewCell {
+    private func makeButtonActions() {
+        self.editButton.addTarget(self, action: #selector(editTapped), for: .touchUpInside)
+        self.deleteButton.addTarget(self, action: #selector(deleteTapped), for: .touchUpInside)
+    }
+
+    @objc func editTapped() {
+        self.editSubject.send(true)
+    }
+
+    @objc func deleteTapped() {
+        self.deleteSubject.send(true)
     }
 }

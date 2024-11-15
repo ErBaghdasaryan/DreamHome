@@ -14,7 +14,7 @@ public protocol IOnboardingService {
 
 public class OnboardingService: IOnboardingService {
     public init() { }
-    
+
     public func getOnboardingItems() -> [OnboardingPresentationModel] {
         [
             OnboardingPresentationModel(image: "firstOnboarding",

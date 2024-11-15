@@ -20,6 +20,8 @@ class PasswordsViewController: BaseViewController {
     private let tableView = UITableView(frame: .zero, style: .grouped)
     private let addNew = UIButton(type: .system)
 
+    var visualEffectView: UIVisualEffectView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         makeButtonsAction()
@@ -75,6 +77,12 @@ class PasswordsViewController: BaseViewController {
         super.setupViewModel()
         self.viewModel?.loadData()
         self.tableView.reloadData()
+
+        viewModel?.activateSuccessSubject.sink { [weak self] _ in
+            guard let self = self else { return }
+            self.viewModel?.loadData()
+            self.tableView.reloadData()
+        }.store(in: &cancellables)
     }
 
     private func setupConstraints() {
@@ -102,7 +110,7 @@ class PasswordsViewController: BaseViewController {
         tableView.contentInset = UIEdgeInsets(top: -25, left: 0, bottom: 0, right: 0    )
 
         addNew.snp.makeConstraints { view in
-            view.bottom.equalToSuperview().inset(140)
+            view.bottom.equalToSuperview().inset(125)
             view.leading.equalToSuperview().offset(16)
             view.trailing.equalToSuperview().inset(16)
             view.height.equalTo(38)
@@ -114,7 +122,7 @@ class PasswordsViewController: BaseViewController {
         self.tableView.dataSource = self
         self.tableView.showsVerticalScrollIndicator = false
 
-        self.tableView.register(PasswordTableViewCell.self)
+        self.tableView.register(CollectionTableViewCell.self)
         self.tableView.register(EmptyTableViewCell.self)
     }
 
@@ -124,7 +132,82 @@ class PasswordsViewController: BaseViewController {
 extension PasswordsViewController {
     
     private func makeButtonsAction() {
-        
+        addNew.addTarget(self, action: #selector(addEmptyCollection), for: .touchUpInside)
+    }
+
+    private func editCollection(for index: Int) {
+        guard let navigationController = self.navigationController else { return }
+        guard let subject = self.viewModel?.activateSuccessSubject else { return }
+
+        let model = self.viewModel?.collections[index]
+
+        PasswordsRouter.showEditPasswordViewController(in: navigationController, navigationModel: .init(activateSuccessSubject: subject, model: model!))
+    }
+
+    @objc func deleteCollection(from index: Int) {
+        guard let navigationController = self.navigationController else { return }
+        guard let id = self.viewModel?.filteredCollections[index].id else { return }
+
+        self.viewModel?.deleteCollection(by: id)
+
+        self.viewModel?.loadData()
+        self.tableView.reloadData()
+    }
+
+    @objc func addEmptyCollection() {
+        guard let navigationController = self.navigationController else { return }
+        let passwords: [String] = []
+
+        let blurEffect = UIBlurEffect(style: .light)
+        visualEffectView = UIVisualEffectView(effect: blurEffect)
+        visualEffectView?.frame = self.view.bounds
+
+        guard let visualEffectView = visualEffectView else { return }
+        self.view.addSubview(visualEffectView)
+
+        let dimmingView = UIView(frame: self.view.bounds)
+        dimmingView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        self.view.addSubview(dimmingView)
+
+        visualEffectView.alpha = 0
+        dimmingView.alpha = 0
+
+        UIView.animate(withDuration: 0.1) {
+            visualEffectView.alpha = 1
+            dimmingView.alpha = 1
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            navigationController.navigationBar.isHidden = true
+            self.tabBarController?.tabBar.isHidden = true
+            _ = AddCollectionView.createAndShow(in: self,
+                                                delegate: { [weak self] name in
+                guard let self = self else { return }
+                self.viewModel?.addCollection(model: .init(name: name,
+                                                           passwords: passwords))
+                UIView.animate(withDuration: 0, animations: {
+                    visualEffectView.alpha = 0
+                    dimmingView.alpha = 0
+                }) { _ in
+                    visualEffectView.removeFromSuperview()
+                    dimmingView.removeFromSuperview()
+                    navigationController.navigationBar.isHidden = false
+                    self.tabBarController?.tabBar.isHidden = false
+                    self.viewModel?.loadData()
+                    self.tableView.reloadData()
+                }
+            }, cancelDelegate: {
+                UIView.animate(withDuration: 0, animations: {
+                    visualEffectView.alpha = 0
+                    dimmingView.alpha = 0
+                }) { _ in
+                    visualEffectView.removeFromSuperview()
+                    dimmingView.removeFromSuperview()
+                    navigationController.navigationBar.isHidden = false
+                    self.tabBarController?.tabBar.isHidden = false
+                }
+            })
+        }
     }
 }
 
@@ -158,10 +241,19 @@ extension PasswordsViewController:  UITableViewDelegate, UITableViewDataSource {
             let cell: EmptyTableViewCell = tableView.dequeueReusableCell(for: indexPath)
             return cell
         } else {
-            let cell: PasswordTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+            let cell: CollectionTableViewCell = tableView.dequeueReusableCell(for: indexPath)
             if let model = viewModel?.filteredCollections[indexPath.row] {
                 cell.setup(with: model)
             }
+
+            cell.editSubject.sink { [weak self] _ in
+                self?.editCollection(for: indexPath.row)
+            }.store(in: &cell.cancellables)
+
+            cell.deleteSubject.sink { [weak self] _ in
+                self?.deleteCollection(from: indexPath.row)
+            }.store(in: &cell.cancellables)
+
             return cell
         }
     }

@@ -17,7 +17,7 @@ class ToggleView: UIView {
                                        textColor: .white.withAlphaComponent(0.5),
                                       font: UIFont(name: "SFProText-Regular", size: 12))
 
-    private let toggleSwitch = UISwitch()
+    public let toggleSwitch = UISwitch()
     public var isOn: Bool = true
 
     init(title: String, example: String) {
