@@ -65,4 +65,9 @@ final class ViewControllerFactory {
         viewController.viewModel = assembler.resolver.resolve(ISettingsViewModel.self)
         return viewController
     }
+
+    static func makeUsageViewController() -> UsageViewController {
+        let viewController = UsageViewController()
+        return viewController
+    }
 }
