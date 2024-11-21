@@ -486,7 +486,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CC66DD292CE29223006D758A /* Build configuration list for PBXProject "DreamHome Designer" */;
+			buildConfigurationList = CC66DD292CE29223006D758A /* Build configuration list for PBXProject "DreamHomeDesigner" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -773,7 +773,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC66DD292CE29223006D758A /* Build configuration list for PBXProject "DreamHome Designer" */ = {
+		CC66DD292CE29223006D758A /* Build configuration list for PBXProject "DreamHomeDesigner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC66DD402CE29225006D758A /* Debug */,
