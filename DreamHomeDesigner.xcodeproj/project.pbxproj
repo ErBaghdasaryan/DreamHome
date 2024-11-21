@@ -84,7 +84,7 @@
 		CC5A8A912CE76FD6007D0D02 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
 		CC5A8A942CE7764F007D0D02 /* AddPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordView.swift; sourceTree = "<group>"; };
 		CC5A8A962CE77CE1007D0D02 /* EditPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordView.swift; sourceTree = "<group>"; };
-		CC66DD2E2CE29223006D758A /* DreamHome Designer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DreamHome Designer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC66DD2E2CE29223006D758A /* DreamHomeDesigner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHomeDesigner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC66DD312CE29223006D758A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC66DD332CE29223006D758A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CC66DD352CE29223006D758A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		CC66DD2F2CE29223006D758A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC66DD2E2CE29223006D758A /* DreamHome Designer.app */,
+				CC66DD2E2CE29223006D758A /* DreamHomeDesigner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,9 +445,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC66DD2D2CE29223006D758A /* DreamHome Designer */ = {
+		CC66DD2D2CE29223006D758A /* DreamHomeDesigner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC66DD422CE29225006D758A /* Build configuration list for PBXNativeTarget "DreamHome Designer" */;
+			buildConfigurationList = CC66DD422CE29225006D758A /* Build configuration list for PBXNativeTarget "DreamHomeDesigner" */;
 			buildPhases = (
 				CC66DD2A2CE29223006D758A /* Sources */,
 				CC66DD2B2CE29223006D758A /* Frameworks */,
@@ -457,7 +457,7 @@
 			);
 			dependencies = (
 			);
-			name = "DreamHome Designer";
+			name = DreamHomeDesigner;
 			packageProductDependencies = (
 				CC66DD482CE29320006D758A /* Swinject */,
 				CC66DD4D2CE29328006D758A /* SwinjectAutoregistration */,
@@ -468,7 +468,7 @@
 				CC41A22F2CE513C300F8C6A2 /* Toast */,
 			);
 			productName = "DreamHome Designer";
-			productReference = CC66DD2E2CE29223006D758A /* DreamHome Designer.app */;
+			productReference = CC66DD2E2CE29223006D758A /* DreamHomeDesigner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -506,7 +506,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC66DD2D2CE29223006D758A /* DreamHome Designer */,
+				CC66DD2D2CE29223006D758A /* DreamHomeDesigner */,
 			);
 		};
 /* End PBXProject section */
@@ -782,7 +782,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC66DD422CE29225006D758A /* Build configuration list for PBXNativeTarget "DreamHome Designer" */ = {
+		CC66DD422CE29225006D758A /* Build configuration list for PBXNativeTarget "DreamHomeDesigner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC66DD432CE29225006D758A /* Debug */,
