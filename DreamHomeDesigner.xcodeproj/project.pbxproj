@@ -714,7 +714,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DreamHome Designer/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "DreamHome Designer";
+				INFOPLIST_KEY_CFBundleDisplayName = CodeVault;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -747,7 +747,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DreamHome Designer/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "DreamHome Designer";
+				INFOPLIST_KEY_CFBundleDisplayName = CodeVault;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
