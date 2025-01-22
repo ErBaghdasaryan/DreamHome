@@ -19,6 +19,7 @@ public protocol IPasswordsService {
 public class PasswordsService: IPasswordsService {
 
     private let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+    typealias Expression = SQLite.Expression
 
     public init() { }
 
