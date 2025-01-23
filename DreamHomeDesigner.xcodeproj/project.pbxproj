@@ -58,6 +58,12 @@
 		CC6A1DE32CE3585E00823803 /* GeneratorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DE22CE3585E00823803 /* GeneratorAssembly.swift */; };
 		CC6A1DE72CE3588500823803 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A1DE62CE3588500823803 /* TabBarViewController.swift */; };
 		CC72908C2CEB31F7008C83A7 /* UsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC72908B2CEB31F7008C83A7 /* UsageViewController.swift */; };
+		CCB88AE02D4263F70098027A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ADF2D4263F30098027A /* MainViewController.swift */; };
+		CCB88AE22D4263FE0098027A /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AE12D4263FA0098027A /* MainRouter.swift */; };
+		CCB88AE42D4264090098027A /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AE32D4264060098027A /* MainAssembly.swift */; };
+		CCB88AE72D4264160098027A /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AE62D4264130098027A /* MainCell.swift */; };
+		CCB88AE92D42641F0098027A /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AE82D42641B0098027A /* FeatureViewController.swift */; };
+		CCB88AEB2D4264250098027A /* FeatureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AEA2D4264210098027A /* FeatureAssembly.swift */; };
 		CCD5A6E52CE2985A00879B77 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E42CE2985A00879B77 /* OnboardingViewController.swift */; };
 		CCD5A6E72CE2986100879B77 /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E62CE2986100879B77 /* OnboardingAssembly.swift */; };
 		CCD5A6E92CE2986700879B77 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5A6E82CE2986700879B77 /* OnboardingRouter.swift */; };
@@ -118,6 +124,12 @@
 		CC6A1DE22CE3585E00823803 /* GeneratorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorAssembly.swift; sourceTree = "<group>"; };
 		CC6A1DE62CE3588500823803 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CC72908B2CEB31F7008C83A7 /* UsageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageViewController.swift; sourceTree = "<group>"; };
+		CCB88ADF2D4263F30098027A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CCB88AE12D4263FA0098027A /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		CCB88AE32D4264060098027A /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		CCB88AE62D4264130098027A /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		CCB88AE82D42641B0098027A /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
+		CCB88AEA2D4264210098027A /* FeatureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAssembly.swift; sourceTree = "<group>"; };
 		CCD5A6E42CE2985A00879B77 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CCD5A6E62CE2986100879B77 /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
 		CCD5A6E82CE2986700879B77 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
@@ -297,6 +309,8 @@
 		CC66DD602CE2939A006D758A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCB88ADE2D4263EE0098027A /* Feature */,
+				CCB88ADD2D4263E70098027A /* Main */,
 				CC6A1DD32CE3581F00823803 /* Settings */,
 				CC6A1DD22CE3581700823803 /* Passwords */,
 				CC6A1DD12CE3581000823803 /* Generator */,
@@ -434,6 +448,34 @@
 			path = Usage;
 			sourceTree = "<group>";
 		};
+		CCB88ADD2D4263E70098027A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AE52D42640C0098027A /* Cell */,
+				CCB88ADF2D4263F30098027A /* MainViewController.swift */,
+				CCB88AE12D4263FA0098027A /* MainRouter.swift */,
+				CCB88AE32D4264060098027A /* MainAssembly.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CCB88ADE2D4263EE0098027A /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AE82D42641B0098027A /* FeatureViewController.swift */,
+				CCB88AEA2D4264210098027A /* FeatureAssembly.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		CCB88AE52D42640C0098027A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AE62D4264130098027A /* MainCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CCD5A6EA2CE2987600879B77 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +576,7 @@
 			files = (
 				CC41A2272CE4E42B00F8C6A2 /* SettingsView.swift in Sources */,
 				CCD5A6E72CE2986100879B77 /* OnboardingAssembly.swift in Sources */,
+				CCB88AE72D4264160098027A /* MainCell.swift in Sources */,
 				CC66DD862CE2945B006D758A /* String.swift in Sources */,
 				CC6A1DD72CE3583300823803 /* SettingsAssembly.swift in Sources */,
 				CC5A8A872CE69589007D0D02 /* CustomTextField.swift in Sources */,
@@ -556,12 +599,14 @@
 				CC41A22D2CE4F84000F8C6A2 /* ToggleView.swift in Sources */,
 				CC66DD7E2CE29443006D758A /* UIColor.swift in Sources */,
 				CC5A8A922CE76FD6007D0D02 /* PasswordTableViewCell.swift in Sources */,
+				CCB88AE92D42641F0098027A /* FeatureViewController.swift in Sources */,
 				CC66DD6E2CE293EA006D758A /* ServiceAssembly.swift in Sources */,
 				CC6A1DE12CE3585800823803 /* GeneratorViewController.swift in Sources */,
 				CC5A8A8F2CE7697C007D0D02 /* EditPasswordAssembly.swift in Sources */,
 				CC41A22A2CE4F37D00F8C6A2 /* SliderView.swift in Sources */,
 				CC66DD362CE29223006D758A /* ViewController.swift in Sources */,
 				CC66DD802CE29448006D758A /* UIDevice.swift in Sources */,
+				CCB88AE42D4264090098027A /* MainAssembly.swift in Sources */,
 				CC6A1DDB2CE3584200823803 /* PasswordsViewController.swift in Sources */,
 				CC5A8A8D2CE76974007D0D02 /* EditPasswordViewController.swift in Sources */,
 				CC5A8A842CE64B88007D0D02 /* CollectionTableViewCell.swift in Sources */,
@@ -571,6 +616,8 @@
 				CC66DD7A2CE29436006D758A /* TableView.swift in Sources */,
 				CC66DD322CE29223006D758A /* AppDelegate.swift in Sources */,
 				CC5A8A8A2CE695CE007D0D02 /* InputField.swift in Sources */,
+				CCB88AEB2D4264250098027A /* FeatureAssembly.swift in Sources */,
+				CCB88AE02D4263F70098027A /* MainViewController.swift in Sources */,
 				CC66DD692CE293D5006D758A /* ReusableView.swift in Sources */,
 				CC66DD342CE29223006D758A /* SceneDelegate.swift in Sources */,
 				CC6A1DD92CE3583900823803 /* SettingsRouter.swift in Sources */,
@@ -578,6 +625,7 @@
 				CC5A8A822CE64944007D0D02 /* EmptyTableViewCell.swift in Sources */,
 				CC66DD652CE293C8006D758A /* Setupable.swift in Sources */,
 				CC6A1DD52CE3582C00823803 /* SettingsViewController.swift in Sources */,
+				CCB88AE22D4263FE0098027A /* MainRouter.swift in Sources */,
 				CC5A8A972CE77CE1007D0D02 /* EditPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,7 +772,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orh.dr3h0md3s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -757,7 +805,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orh.dr3h0md3s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

